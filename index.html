@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Peter H. Le</title>
+  <meta name="description" content="Peter Le's resume website">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+  <script src="resume.js"></script>
+</head>
+
+<body>
+<div class="relative">
+  <nav class="absolute w-screen flex items-center justify-between flex-wrap bg-gradient-to-r from-sky-400 to-blue-600 p-2">
+    <div class="flex items-center flex-shrink-0 text-white mr-6">
+      <div class="flex items-center justify-center mr-6 relative">
+          <img src="/img/profilepicture.jpeg" alt="peter le profile picture" class="w-16 h-16 rounded-full object-cover">
+      </div>
+      <span class="font-semibold text-xl tracking-tight">Peter H. Le</span>
+    </div>
+    <div class="block lg:hidden">
+      <button id="menu-button" class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+      </button>
+    </div>
+    <div id="menu" class="block hidden w-full block flex-grow lg:flex lg:justify-end lg:w-auto">
+      <div>
+        <a href="/img/resume.pdf" target="_blank" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">View Resume</a>
+      </div>
+    </div>
+  </nav>
+</div>
+  <div class="snap-y snap-mandatory h-screen overflow-scroll">
+    <div class="snap-start bg-amber-200 w-screen h-screen flex items-center justify-center text-8xl">
+      <div class="snap-x mx-auto snap-mandatory h-4/5 flex w-5/6 overflow-scroll mt-20">
+        <div class="snap-center bg-emerald-200 w-5/6 flex-shrink-0 h-full flex items-center justify-center text-8xl rounded-lg mx-2">1</div>
+        <div class="snap-center bg-teal-200 w-5/6 flex-shrink-0  h-full flex items-center justify-center text-8xl rounded-lg mx-2">2</div>
+        <div class="snap-center bg-cyan-200 w-5/6 flex-shrink-0 h-full flex items-center justify-center text-8xl rounded-lg mx-2">3</div>
+        <div class="snap-center bg-fuchsia-200 w-5/6 flex-shrink-0 h-full flex items-center justify-center text-8xl rounded-lg mx-2">4</div>
+      </div>
+    </div>
+    <div class="snap-start bg-teal-200 w-screen  h-screen flex items-center justify-center text-8xl">2</div>
+    <div class="snap-start bg-cyan-200 w-screen h-screen flex items-center justify-center text-8xl">3</div>
+    <div class="snap-start bg-fuchsia-200 w-screen h-screen flex items-center justify-center text-8xl">4</div>
+  </div>
+</body>
+
+</html>
