@@ -47,7 +47,7 @@
     display: block;
     position: absolute;
     left: 50%;
-    background: #fff;
+    background: #fde047;
     height: .5em;
     width: .5em;
     top: .5em;
@@ -56,6 +56,7 @@
     transform-origin: top center;
     backface-visibility: hidden;
     animation: scroll 2s ease-out infinite;
+    z-index: 1001;
 }
 
 .scroll-icon {
@@ -63,8 +64,9 @@
    position: relative;
    height: 3em;
    width: 1.5em;
-   border: .125em solid #fff;
+   border: .125em solid #fde047;
    border-radius: 1em;
+    z-index: 10001;
 }
 
 .scroll-icon-section {
@@ -77,18 +79,69 @@
 
 .console-container {
     font-family: "Courier New";
-    /*font-size:1em;*/
-    text-align:center;
-    height:100px;
-    width:fit-content;
-    display:block;
-    color:white;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    margin:auto;
 }
-.console-underscore {
-    top: -0.14em
+
+.wave-section {
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+section .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url(/img/wave.png);
+    background-size: 1000px 100px;
+}
+
+section .wave.wave1 {
+    animation: animate 25s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+section .wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: .2;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+section .wave.wave3 {
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.5;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+section .wave.wave4 {
+    animation: animate2 10s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -7s;
+    bottom: 20px;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 1000px;
+    }
+}
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: -1000px;
+    }
 }

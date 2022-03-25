@@ -62,7 +62,7 @@
 	});
 
 
-	consoleText(["Hi!", "Peter H. Le"], 'text');
+	consoleText(["Hi!", "Welcome to", "Peter Le's", "resume page"], 'text');
 
 	function consoleText(words, id, colors) {
 		if (colors === undefined) colors = ['#fff'];
