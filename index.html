@@ -12,40 +12,6 @@
 </head>
 
 <body class="no-scrollbar">
-  <!--<div class="relative">
-    <nav class="absolute w-screen flex items-center justify-between flex-wrap bg-gradient-to-r from-sky-400 to-blue-600 p-2">
-      <div class="flex items-center flex-shrink-0 text-white mr-6">
-        <div class="flex items-center justify-center mr-6 relative">
-            <img src="/img/profilepicture.jpeg" alt="peter le profile picture" class="w-16 h-16 rounded-full object-cover">
-        </div>
-        <span class="font-semibold text-xl tracking-tight">Peter H. Le</span>
-      </div>
-      <div class="block lg:hidden">
-        <button id="menu-button" class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-        </button>
-      </div>
-      <div id="menu" class="block hidden w-full block flex-grow lg:flex lg:justify-end lg:w-auto">
-        <div>
-          <a href="/img/resume.pdf" target="_blank" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">View Resume</a>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <div class="snap-y snap-mandatory h-screen overflow-auto no-scrollbar">
-    <div class="snap-start bg-amber-200 h-screen flex items-center justify-center text-8xl">
-      <div class="snap-x mx-auto snap-mandatory h-4/5 flex w-5/6 overflow-auto mt-20 no-scrollbar">
-        <div class="snap-center bg-emerald-200 w-5/6 flex-shrink-0 h-full flex items-center justify-center text-8xl rounded-lg mx-2">1</div>
-        <div class="snap-center bg-teal-200 w-5/6 flex-shrink-0  h-full flex items-center justify-center text-8xl rounded-lg mx-2">2</div>
-        <div class="snap-center bg-cyan-200 w-5/6 flex-shrink-0 h-full flex items-center justify-center text-8xl rounded-lg mx-2">3</div>
-        <div class="snap-center bg-fuchsia-200 w-5/6 flex-shrink-0 h-full flex items-center justify-center text-8xl rounded-lg mx-2">4</div>
-      </div>
-    </div>
-    <div class="snap-start bg-teal-200 h-screen flex items-center justify-center text-8xl">2</div>
-    <div class="snap-start bg-cyan-200 h-screen flex items-center justify-center text-8xl">3</div>
-    <div class="snap-start bg-fuchsia-200 h-screen flex items-center justify-center text-8xl">4</div>
-  </div>-->
-
   <div data-scroll-container>
     <section id="intro" class="h-screen flex items-center justify-center text-center bg-gradient-to-r from-sky-400 to-blue-600 wave-section" data-scroll-section>
       <div class="container px-5 mx-auto">
@@ -72,84 +38,107 @@
     </section>
     </section>
     <section id="experience-section" class="py-40 bg-white" data-scroll-section>
-      <div class="container px-5 mx-auto">
-        <div id="experience" class="lg:grid grid-cols-1 gap-4 items-start">
-          <h2 class="sm:text-5xl text-3xl font-extrabold" data-scroll data-scroll-target="#experience">Experiences</h2>
-          <div class="text-xl pt-4 lg:pt-0">
-            <div class="container bg-white mx-auto w-full h-full">
-              <div class="relative wrap overflow-hidden p-10 h-full">
-                <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
-                <!-- right timeline -->
-                <div class="mb-8 flex justify-between items-center w-full right-timeline">
-                  <div class="order-1 w-5/12"></div>
-                  <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                    <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
-                  </div>
-                  <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                    <h3 class="mb-3 font-bold text-gray-800 text-xl">Lorem Ipsum</h3>
-                    <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  </div>
-                </div>
+      <div id="experience" class="container px-5 mx-auto">
+        <h2 class="sm:text-5xl text-4xl font-extrabold" data-scroll data-scroll-target="#experience">Experiences</h2>
+        <div class="flex flex-col md:grid grid-cols-9 mx-auto md:px-20 py-10">
+          <!-- Right -->
+          <div class="flex md:contents">
+            <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="border-2-2 border-opacity-20 border-gray-700 h-full border pointer-events-none"></div>
+              </div>
+              <div class="z-20 flex items-center absolute top-1/2 -mt-3 bg-green-500 shadow-xl w-8 h-8 rounded-full" style="left: -20%">
+                <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+              </div>
+            </div>
+            <div class="bg-yellow-300 col-start-6 col-end-10 rounded-lg shadow-xl md:px-10 px-6 py-10 w-full my-10">
+              <h3 class="mb-3 font-bold text-gray-900 text-xl">Keyhole Software</h3>
+              <p class="text-sm leading-snug tracking-wide text-gray-600 text-opacity-100">Software Consultant</p>
+              <p class="text-xs leading-snug tracking-wide text-gray-500 text-opacity-100">March 2019 - </p>
+            </div>
+          </div>
 
-                <!-- left timeline -->
-                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                  <div class="order-1 w-5/12"></div>
-                  <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                    <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
-                  </div>
-                  <div class="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                    <h3 class="mb-3 font-bold text-white text-xl">Lorem Ipsum</h3>
-                    <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  </div>
-                </div>
+          <!-- left -->
+          <div class="flex flex-row-reverse md:contents">
+            <div class="bg-sky-500 col-start-1 col-end-5 rounded-lg shadow-xl md:px-10 px-6 py-10 ml-auto w-full my-10">
+              <h3 class="mb-3 font-bold text-white text-xl">Cerner Corporation</h3>
+              <p class="text-sm leading-snug tracking-wide text-gray-100 text-opacity-100">Senior Software Engineer</p>
+              <p class="text-xs leading-snug tracking-wide text-gray-300 text-opacity-100">September 2018 - March 2019</p>
+            </div>
+            <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="border-2-2 border-opacity-20 border-gray-700 h-full border pointer-events-none"></div>
+              </div>
+              <div class="z-20 flex items-center absolute top-1/2 -mt-3 bg-red-600 shadow-xl w-8 h-8 rounded-full" style="left: -20%">
+                <h1 class="mx-auto font-semibold text-lg text-white">2</h1>
+              </div>
+            </div>
+          </div>
 
-                <!-- right timeline -->
-                <div class="mb-8 flex justify-between items-center w-full right-timeline">
-                  <div class="order-1 w-5/12"></div>
-                  <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                    <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
-                  </div>
-                  <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                    <h3 class="mb-3 font-bold text-gray-800 text-xl">Lorem Ipsum</h3>
-                    <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  </div>
-                </div>
+          <!-- Right -->
+          <div class="flex md:contents">
+            <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="border-2-2 border-opacity-20 border-gray-700 h-full border pointer-events-none"></div>
+              </div>
+              <div class="z-20 flex items-center absolute top-1/2 -mt-3 bg-red-600 shadow-xl w-8 h-8 rounded-full" style="left: -20%">
+                <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+              </div>
+            </div>
+            <div class="bg-yellow-300 col-start-6 col-end-10 rounded-lg shadow-xl md:px-10 px-6 py-10 w-full my-10">
+              <h3 class="mb-3 font-bold text-gray-900 text-xl">Cerner Corporation</h3>
+              <p class="text-sm leading-snug tracking-wide text-gray-600 text-opacity-100">Associate Senior Software Engineer</p>
+              <p class="text-xs leading-snug tracking-wide text-gray-500 text-opacity-100">January 2018 - September 2018</p>
+            </div>
+          </div>
 
-                <!-- left timeline -->
-                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                  <div class="order-1 w-5/12"></div>
-                  <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                    <h1 class="mx-auto text-white font-semibold text-lg">4</h1>
-                  </div>
-                  <div class="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                    <h3 class="mb-3 font-bold text-white text-xl">Lorem Ipsum</h3>
-                    <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  </div>
-                </div>
+          <!-- left -->
+          <div class="flex flex-row-reverse md:contents">
+            <div class="bg-sky-500 col-start-1 col-end-5 rounded-lg shadow-xl md:px-10 px-6 py-10 ml-auto w-full my-10">
+              <h3 class="mb-3 font-bold text-white text-xl">Cerner Corporation</h3>
+              <p class="text-sm leading-snug tracking-wide text-gray-100 text-opacity-100">Software Engineer (L6)</p>
+              <p class="text-xs leading-snug tracking-wide text-gray-300 text-opacity-100">September 2016 - January 2018</p>
+            </div>
+            <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="border-2-2 border-opacity-20 border-gray-700 h-full border pointer-events-none"></div>
+              </div>
+              <div class="z-20 flex items-center absolute top-1/2 -mt-3 bg-red-600 shadow-xl w-8 h-8 rounded-full" style="left: -20%">
+                <h1 class="mx-auto font-semibold text-lg text-white">4</h1>
+              </div>
+            </div>
+          </div>
 
-                <!-- right timeline -->
-                <div class="mb-8 flex justify-between items-center w-full right-timeline">
-                  <div class="order-1 w-5/12"></div>
-                  <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                    <h1 class="mx-auto font-semibold text-lg text-white">5</h1>
-                  </div>
-                  <div class="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                    <h3 class="mb-3 font-bold text-gray-800 text-xl">Lorem Ipsum</h3>
-                    <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  </div>
-                </div>
+          <!-- Right -->
+          <div class="flex md:contents">
+            <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="border-2-2 border-opacity-20 border-gray-700 h-full border pointer-events-none"></div>
+              </div>
+              <div class="z-20 flex items-center absolute top-1/2 -mt-3 bg-red-600 shadow-xl w-8 h-8 rounded-full" style="left: -20%">
+                <h1 class="mx-auto font-semibold text-lg text-white">5</h1>
+              </div>
+            </div>
+            <div class="bg-yellow-300 col-start-6 col-end-10 rounded-lg shadow-xl md:px-10 px-6 py-10 w-full my-10">
+              <h3 class="mb-3 font-bold text-gray-900 text-xl">Cerner Corporation</h3>
+              <p class="text-sm leading-snug tracking-wide text-gray-600 text-opacity-100">Software Engineer (L7)</p>
+              <p class="text-xs leading-snug tracking-wide text-gray-500 text-opacity-100">June 2014 - September 2016</p>
+            </div>
+          </div>
 
-                <!-- left timeline -->
-                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                  <div class="order-1 w-5/12"></div>
-                  <div class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
-                    <h1 class="mx-auto text-white font-semibold text-lg">6</h1>
-                  </div>
-                  <div class="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                    <h3 class="mb-3 font-bold text-white text-xl">Lorem Ipsum</h3>
-                    <p class="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  </div>
-                </div>
+          <!-- left -->
+          <div class="flex flex-row-reverse md:contents">
+            <div class="bg-sky-500 col-start-1 col-end-5 rounded-lg shadow-xl md:px-10 px-6 py-10 ml-auto w-full my-10">
+              <h3 class="mb-3 font-bold text-white text-xl">DST System</h3>
+              <p class="text-sm leading-snug tracking-wide text-gray-100 text-opacity-100">Software Engineer</p>
+              <p class="text-xs leading-snug tracking-wide text-gray-300 text-opacity-100">June 2013 - June 2014</p>
+            </div>
+            <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="border-2-2 border-opacity-20 border-gray-700 h-full border pointer-events-none"></div>
+              </div>
+              <div class="z-20 flex items-center absolute top-1/2 -mt-3 bg-red-600 shadow-xl w-8 h-8 rounded-full" style="left: -20%">
+                <h1 class="mx-auto font-semibold text-lg text-white">6</h1>
               </div>
             </div>
           </div>
