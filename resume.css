@@ -145,3 +145,7 @@ section .wave.wave4 {
         background-position-x: -1000px;
     }
 }
+
+#close-modal {
+    text-align: -webkit-right;
+}

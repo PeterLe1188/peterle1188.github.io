@@ -247,9 +247,11 @@
 		});
 
 		modal.style.display = "block";
+		modal.style.overflow = "hidden"
 	}
 
 	closeModal.onclick = function() {
 		modal.style.display = "none";
+		modal.style.overflow = "auto"
 	}
 })()
