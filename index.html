@@ -25,7 +25,7 @@
               <span id="space" class="hidden">&nbsp;</span>
             </div>
           </div>
-        <section class="scroll-icon-section">
+        <section class="scroll-icon-section" data-scroll data-scroll-speed="1.5">
           <span class="scroll-icon">
             <span class="scroll-icon__dot"></span>
           </span>
@@ -38,8 +38,8 @@
     </section>
     </section>
     <section id="experience-section" class="py-40 bg-white" data-scroll-section>
-      <div id="experience" class="container px-5 mx-auto">
-        <h2 class="sm:text-5xl text-4xl font-extrabold" data-scroll data-scroll-target="#experience">Experiences</h2>
+      <div id="experiences" class="container px-5 mx-auto">
+        <h2 class="sm:text-5xl text-4xl font-extrabold">Experiences</h2>
         <div class="flex flex-col md:grid grid-cols-9 mx-auto md:px-20 py-10">
           <!-- Right -->
           <div class="flex md:contents">
@@ -47,12 +47,12 @@
               <div class="h-full w-6 flex items-center justify-center">
                 <div class="border-2-2 border-opacity-20 border-gray-700 h-full border pointer-events-none"></div>
               </div>
-              <div class="z-20 flex items-center absolute top-1/2 -mt-3 bg-green-500 shadow-xl w-8 h-8 rounded-full" style="left: -20%">
+              <div class="flex items-center absolute top-1/2 -mt-3 bg-green-500 shadow-xl w-8 h-8 rounded-full" style="left: -20%">
                 <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
               </div>
             </div>
-            <div class="bg-yellow-300 col-start-6 col-end-10 rounded-lg shadow-xl md:px-10 px-6 py-10 w-full my-10">
-              <h3 class="mb-3 font-bold text-gray-900 text-xl">Keyhole Software</h3>
+            <div id="khs" class="cursor-pointer bg-yellow-300 hover:bg-yellow-400 col-start-6 col-end-10 rounded-lg shadow-xl md:px-10 px-6 py-10 w-full my-10" data-scroll data-scroll-direction="horizontal" data-scroll-speed="5" data-scroll-target="#experiences">
+              <h3 class="mb-3 font-bold text-gray-900 text-xl flex items-center">Keyhole Software</h3>
               <p class="text-sm leading-snug tracking-wide text-gray-600 text-opacity-100">Software Consultant</p>
               <p class="text-xs leading-snug tracking-wide text-gray-500 text-opacity-100">March 2019 - </p>
             </div>
@@ -60,8 +60,8 @@
 
           <!-- left -->
           <div class="flex flex-row-reverse md:contents">
-            <div class="bg-sky-500 col-start-1 col-end-5 rounded-lg shadow-xl md:px-10 px-6 py-10 ml-auto w-full my-10">
-              <h3 class="mb-3 font-bold text-white text-xl">Cerner Corporation</h3>
+            <div id="cerner-s" class="cursor-pointer bg-sky-500 hover:bg-sky-600 col-start-1 col-end-5 rounded-lg shadow-xl md:px-10 px-6 py-10 ml-auto w-full my-10" style="z-index: 999" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-5" data-scroll-target="#experiences">
+              <h3 class="mb-3 font-bold text-white text-xl flex items-center">Cerner Corporation</h3>
               <p class="text-sm leading-snug tracking-wide text-gray-100 text-opacity-100">Senior Software Engineer</p>
               <p class="text-xs leading-snug tracking-wide text-gray-300 text-opacity-100">September 2018 - March 2019</p>
             </div>
@@ -69,7 +69,7 @@
               <div class="h-full w-6 flex items-center justify-center">
                 <div class="border-2-2 border-opacity-20 border-gray-700 h-full border pointer-events-none"></div>
               </div>
-              <div class="z-20 flex items-center absolute top-1/2 -mt-3 bg-red-600 shadow-xl w-8 h-8 rounded-full" style="left: -20%">
+              <div class="flex items-center absolute top-1/2 -mt-3 bg-red-600 shadow-xl w-8 h-8 rounded-full" style="left: -20%">
                 <h1 class="mx-auto font-semibold text-lg text-white">2</h1>
               </div>
             </div>
@@ -81,12 +81,12 @@
               <div class="h-full w-6 flex items-center justify-center">
                 <div class="border-2-2 border-opacity-20 border-gray-700 h-full border pointer-events-none"></div>
               </div>
-              <div class="z-20 flex items-center absolute top-1/2 -mt-3 bg-red-600 shadow-xl w-8 h-8 rounded-full" style="left: -20%">
+              <div class="flex items-center absolute top-1/2 -mt-3 bg-red-600 shadow-xl w-8 h-8 rounded-full" style="left: -20%">
                 <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
               </div>
             </div>
-            <div class="bg-yellow-300 col-start-6 col-end-10 rounded-lg shadow-xl md:px-10 px-6 py-10 w-full my-10">
-              <h3 class="mb-3 font-bold text-gray-900 text-xl">Cerner Corporation</h3>
+            <div id="cerner-a" class="cursor-pointer bg-yellow-300 hover:bg-yellow-400 col-start-6 col-end-10 rounded-lg shadow-xl md:px-10 px-6 py-10 w-full my-10" data-scroll data-scroll-direction="horizontal" data-scroll-speed="10" data-scroll-target="#experiences">
+              <h3 class="mb-3 font-bold text-gray-900 text-xl flex items-center">Cerner Corporation</h3>
               <p class="text-sm leading-snug tracking-wide text-gray-600 text-opacity-100">Associate Senior Software Engineer</p>
               <p class="text-xs leading-snug tracking-wide text-gray-500 text-opacity-100">January 2018 - September 2018</p>
             </div>
@@ -94,8 +94,8 @@
 
           <!-- left -->
           <div class="flex flex-row-reverse md:contents">
-            <div class="bg-sky-500 col-start-1 col-end-5 rounded-lg shadow-xl md:px-10 px-6 py-10 ml-auto w-full my-10">
-              <h3 class="mb-3 font-bold text-white text-xl">Cerner Corporation</h3>
+            <div id="cerner-l6" class="cursor-pointer bg-sky-500 hover:bg-sky-600 col-start-1 col-end-5 rounded-lg shadow-xl md:px-10 px-6 py-10 ml-auto w-full my-10" style="z-index: 999" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-10" data-scroll-target="#experiences">
+              <h3 class="mb-3 font-bold text-white text-xl flex items-center">Cerner Corporation</h3>
               <p class="text-sm leading-snug tracking-wide text-gray-100 text-opacity-100">Software Engineer (L6)</p>
               <p class="text-xs leading-snug tracking-wide text-gray-300 text-opacity-100">September 2016 - January 2018</p>
             </div>
@@ -103,7 +103,7 @@
               <div class="h-full w-6 flex items-center justify-center">
                 <div class="border-2-2 border-opacity-20 border-gray-700 h-full border pointer-events-none"></div>
               </div>
-              <div class="z-20 flex items-center absolute top-1/2 -mt-3 bg-red-600 shadow-xl w-8 h-8 rounded-full" style="left: -20%">
+              <div class="flex items-center absolute top-1/2 -mt-3 bg-red-600 shadow-xl w-8 h-8 rounded-full" style="left: -20%">
                 <h1 class="mx-auto font-semibold text-lg text-white">4</h1>
               </div>
             </div>
@@ -115,12 +115,12 @@
               <div class="h-full w-6 flex items-center justify-center">
                 <div class="border-2-2 border-opacity-20 border-gray-700 h-full border pointer-events-none"></div>
               </div>
-              <div class="z-20 flex items-center absolute top-1/2 -mt-3 bg-red-600 shadow-xl w-8 h-8 rounded-full" style="left: -20%">
+              <div class="flex items-center absolute top-1/2 -mt-3 bg-red-600 shadow-xl w-8 h-8 rounded-full" style="left: -20%">
                 <h1 class="mx-auto font-semibold text-lg text-white">5</h1>
               </div>
             </div>
-            <div class="bg-yellow-300 col-start-6 col-end-10 rounded-lg shadow-xl md:px-10 px-6 py-10 w-full my-10">
-              <h3 class="mb-3 font-bold text-gray-900 text-xl">Cerner Corporation</h3>
+            <div id="cerner-l7" class="cursor-pointer bg-yellow-300 hover:bg-yellow-400 col-start-6 col-end-10 rounded-lg shadow-xl md:px-10 px-6 py-10 w-full my-10" data-scroll data-scroll-direction="horizontal" data-scroll-speed="15" data-scroll-target="#experiences">
+              <h3 class="mb-3 font-bold text-gray-900 text-xl flex items-center">Cerner Corporation</h3>
               <p class="text-sm leading-snug tracking-wide text-gray-600 text-opacity-100">Software Engineer (L7)</p>
               <p class="text-xs leading-snug tracking-wide text-gray-500 text-opacity-100">June 2014 - September 2016</p>
             </div>
@@ -128,8 +128,8 @@
 
           <!-- left -->
           <div class="flex flex-row-reverse md:contents">
-            <div class="bg-sky-500 col-start-1 col-end-5 rounded-lg shadow-xl md:px-10 px-6 py-10 ml-auto w-full my-10">
-              <h3 class="mb-3 font-bold text-white text-xl">DST System</h3>
+            <div id="dst" class="cursor-pointer bg-sky-500 hover:bg-sky-600 col-start-1 col-end-5 rounded-lg shadow-xl md:px-10 px-6 py-10 ml-auto w-full my-10" style="z-index: 999" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-15" data-scroll-target="#experiences">
+              <h3 class="mb-3 font-bold text-white text-xl flex items-center">DST System</h3>
               <p class="text-sm leading-snug tracking-wide text-gray-100 text-opacity-100">Software Engineer</p>
               <p class="text-xs leading-snug tracking-wide text-gray-300 text-opacity-100">June 2013 - June 2014</p>
             </div>
@@ -137,7 +137,7 @@
               <div class="h-full w-6 flex items-center justify-center">
                 <div class="border-2-2 border-opacity-20 border-gray-700 h-full border pointer-events-none"></div>
               </div>
-              <div class="z-20 flex items-center absolute top-1/2 -mt-3 bg-red-600 shadow-xl w-8 h-8 rounded-full" style="left: -20%">
+              <div class="flex items-center absolute top-1/2 -mt-3 bg-red-600 shadow-xl w-8 h-8 rounded-full" style="left: -20%">
                 <h1 class="mx-auto font-semibold text-lg text-white">6</h1>
               </div>
             </div>
@@ -145,18 +145,14 @@
         </div>
       </div>
     </section>
-<!--    <section id="office" class="py-20" data-scroll-section>-->
-<!--      <div class="sm:grid grid-cols-2 gap-40">-->
-<!--        <figure class="flex items-end">-->
-<!--          <img class="shadow-lg h-auto" width="1000" height="667" src="https://assets.codepen.io/162656/office1.jpg?format=auto" alt="" data-scroll data-scroll-speed="4.8">-->
-<!--        </figure>-->
-<!--        <figure>-->
-<!--          <img class="shadow-lg h-auto" width="1000" height="1498" src="https://assets.codepen.io/162656/office2.jpg?format=auto-->
-
-<!--" alt="" data-scroll data-scroll-speed="1.2">-->
-<!--        </figure>-->
-<!--      </div>-->
-<!--    </section>-->
+    <section id="technologies" class="py-20 bg-yellow-50 w-screen h-screen" data-scroll-section>
+      <div class="sm:grid grid-cols-2 gap-40">
+        <div class="flex items-end">
+        </div>
+        <div>
+        </div>
+      </div>
+    </section>
 <!--    <section id="services" class="relative py-60 bg-green-50" data-scroll-section>-->
 <!--      <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -skew-x-12 whitespace-nowrap text-6xl sm:text-9xl font-extrabold py-4">-->
 <!--        <span class="inline-block" data-scroll data-scroll-repeat data-scroll-speed="3" data-scroll-call="randomizeTextColor">S</span>-->
@@ -231,6 +227,25 @@
 <!--      <img width="24" height="24" src="https://assets.codepen.io/162656/george-martsoukos-small-logo.svg" alt="George Martsoukos logo">-->
 <!--    </a>-->
 <!--  </footer>-->
+  <div class="fixed hidden inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full" id="modal-overlay">
+    <div class="relative md:top-1/4 p-2 border md:m-auto md:h-1/2 md:w-1/2 w-full h-full shadow-lg md:rounded-md bg-white overflow-auto" id="modal-detail">
+      <div class="text-center relative">
+        <div class="cursor-pointer absolute top-0 right-0" id="close-modal">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <div class="pt-10">
+          <h3 class="text-xl leading-6 font-medium text-gray-900" id="experience-modal-title">Keyhole Software</h3>
+          <p class="text-sm leading-snug tracking-wide text-gray-600 text-opacity-100" id="experience-modal-subtitle"></p>
+          <p class="text-xs leading-snug tracking-wide text-gray-500 text-opacity-100" id="experience-modal-datetime"></p>
+          <div class="md:mt-5 md:px-10 md:py-5 mt-2 px-7 py-5">
+            <p class="text-sm text-gray-500" id="experience-modal-content"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="locomotive-scroll.min.js"></script>
   <script src="resume.js"></script>
