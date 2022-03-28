@@ -153,6 +153,7 @@
 	const subtitle = document.getElementById("experience-modal-subtitle");
 	const datetime = document.getElementById("experience-modal-datetime");
 	const content = document.getElementById("experience-modal-content");
+	const body = document.querySelector("body");
 	khs.onclick = function() {
 		const details = [
 			"Ability to pick up tasks and work with minimal supervision",
@@ -248,10 +249,12 @@
 
 		modal.style.display = "block";
 		modal.style.overflow = "hidden"
+		body.style.overflow = "hidden"
 	}
 
 	closeModal.onclick = function() {
 		modal.style.display = "none";
 		modal.style.overflow = "auto"
+		body.style.overflow = "auto"
 	}
 })()
