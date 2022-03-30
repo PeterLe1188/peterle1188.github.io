@@ -55,12 +55,11 @@
 		scroll.update();
 	}
 
-	consoleText(["Hi!", "Welcome to", "Peter Le's", "resume page"], 'text');
+	consoleText(["Welcome!", "Peter Le", "Fullstack Developer"], 'text');
 
 	function consoleText(words, id, colors) {
 		if (colors === undefined) colors = ['#fff'];
 		let visible = true;
-		const con = document.getElementById('console');
 		let letterCount = 1;
 		let x = 1;
 		let waiting = false;
@@ -116,7 +115,7 @@
 		const details = [
 			"Ability to pick up tasks and work with minimal supervision",
 			"Assigned and worked on client projects",
-			"Drive, design, and coded client application from the ground up using Reactjs, C#/.NetCore/Java",
+			"Drive, design, and coded client application from the ground up using ReactJs, C#/.NetCore/Java",
 			"Lead on the UI team for another client on their new application",
 			"Helped whiteboard and design the admin site for the client.",
 			"Took initiative on designing services to import standard formatted files used by the clients. i.e NACHA, X12",
@@ -215,4 +214,68 @@
 		modal.style.overflow = "auto"
 		body.style.overflow = "auto"
 	}
+
+
+	const entries = [
+
+		{ image: "img/azure.svg", width: "40", height: "40", url: "", target: "_top", tooltip: "Azure" },
+		{ image: "img/azureadmin.png", width: "60", height: "60", url: "", target: "_top", tooltip: "Azure Administrator" },
+		{ image: "img/azuredevops.png", width: "60", height: "60", url: "", target: "_top", tooltip: "Azure DevOps" },
+		{ image: "img/crucible.svg", width: "40", height: "40", url: "", target: "_top", tooltip: "Crucible" },
+		{ image: "img/csharp.svg", width: "120", height: "120", url: "", target: "_top", tooltip: "C#" },
+		{ image: "img/css3.svg", width: "70", height: "70", url: "", target: "_top", tooltip: "CSS" },
+		{ image: "img/dotnetcore.svg", width: "100", height: "100", url: "", target: "_top", tooltip: ".NET Core" },
+		{ image: "img/eclipse.svg", width: "50", height: "50", url: "", target: "_top", tooltip: "Eclipse" },
+		{ image: "img/git.svg", width: "80", height: "80", url: "", target: "_top", tooltip: "Git" },
+		{ image: "img/github.svg", width: "70", height: "70", url: "", target: "_top", tooltip: "Github" },
+		{ image: "img/html5.svg", width: "60", height: "60", url: "", target: "_top", tooltip: "HTML" },
+		{ image: "img/java.svg", width: "50", height: "50", url: "", target: "_top", tooltip: "JAVA" },
+		{ image: "img/jenkins.svg", width: "30", height: "30", url: "", target: "_top", tooltip: "Jenkins" },
+		{ image: "img/jetbrains.svg", width: "100", height: "100", url: "", target: "_top", tooltip: "Jetbrains" },
+		{ image: "img/jira.svg", width: "60", height: "60", url: "", target: "_top", tooltip: "Jira" },
+		{ image: "img/jquery.svg", width: "40", height: "40", url: "", target: "_top", tooltip: "jQuery" },
+		{ image: "img/js.svg", width: "120", height: "120", url: "", target: "_top", tooltip: "JavaScript" },
+		{ image: "img/junit.png", width: "50", height: "50", url: "", target: "_top", tooltip: "JUnit" },
+		{ image: "img/less.svg", width: "30", height: "30", url: "", target: "_top", tooltip: "Less" },
+		{ image: "img/materialui.svg", width: "100", height: "100", url: "", target: "_top", tooltip: "Material-UI" },
+		{ image: "img/mysql.svg", width: "40", height: "40", url: "", target: "_top", tooltip: "MySQL" },
+		{ image: "img/postman.svg", width: "70", height: "70", url: "", target: "_top", tooltip: "Postman" },
+		{ image: "img/nodejs.svg", width: "70", height: "70", url: "", target: "_top", tooltip: "NodeJs" },
+		{ image: "img/rails.svg", width: "30", height: "30", url: "", target: "_top", tooltip: "Ruby on Rails" },
+		{ image: "img/react.svg", width: "130", height: "130", url: "", target: "_top", tooltip: "React" },
+		{ image: "img/redux.svg", width: "60", height: "60", url: "", target: "_top", tooltip: "Redux" },
+		{ image: "img/redux-saga.svg", width: "50", height: "50", url: "", target: "_top", tooltip: "Redux-Saga" },
+		{ image: "img/restapi.png", width: "90", height: "90", url: "", target: "_top", tooltip: "Rest API" },
+		{ image: "img/rspec.svg", width: "30", height: "30", url: "", target: "_top", tooltip: "Rspec" },
+		{ image: "img/sass.svg", width: "30", height: "30", url: "", target: "_top", tooltip: "Sass" },
+		{ image: "img/sqlserver.svg", width: "60", height: "60", url: "", target: "_top", tooltip: "SQL Server" },
+		{ image: "img/storedprocedure.svg", width: "70", height: "70", url: "", target: "_top", tooltip: "Stored Procedure" },
+		{ image: "img/typescript.svg", width: "40", height: "40", url: "", target: "_top", tooltip: "Typescript" },
+		{ image: "img/webdriverio.png", width: "40", height: "40", url: "", target: "_top", tooltip: "WebdriverIO" },
+		{ image: "img/xunit.png", width: "50", height: "50", url: "", target: "_top", tooltip: "xUnit" },
+
+	];
+
+	const settings = {
+		entries: entries,
+		width: "78%",
+		height: "78%",
+		radius: "75%",
+		radiusMin: 75,
+		bgDraw: false,
+		bgColor: "#333",
+		opacityOver: 1.00,
+		opacityOut: 0.2,
+		opacitySpeed: 1,
+		fov: 700,
+		speed: 0.07,
+		tooltipFontSize: "15",
+		tooltipFontColor: "#fff",
+		tooltipFontToUpperCase: false,
+		tooltipDiffX: 0,
+		tooltipDiffY: 10
+	};
+
+	$("#tag-cloud").svg3DTagCloud( settings );
+	document.getElementById("tag-cloud").children[0].classList.add("m-auto");
 })()

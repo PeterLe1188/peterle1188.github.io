@@ -18,7 +18,7 @@
         <div class="flex items-center justify-center my-6 relative">
           <img src="/img/profilepicture.jpeg" alt="peter le profile picture" class="lg:w-64 lg:h-64 w-48 h-48 rounded-full object-cover shadow-2xl shadow-indigo-500/50">
         </div>
-          <div class="console-container flex lg:text-8xl md:text-6xl sm:text-4xl text-3xl my-20 text-center w-fit m-auto" data-scroll data-scroll-repeat data-scroll-call="toggleBackToTop">
+          <div class="console-container flex lg:text-8xl md:text-6xl sm:text-3xl my-20 text-center w-fit m-auto" data-scroll data-scroll-repeat data-scroll-call="toggleBackToTop">
             <span id="text"></span>
             <div class="inline-block relative align-baseline" id="console">
               <span id="underscore" class="console-underscore text-yellow-300">&#95;</span>
@@ -146,32 +146,70 @@
       </div>
     </section>
     <section id="technologies" class="bg-[#333] w-screen h-screen tech-stack" data-scroll-section>
-      <div id="tech-stacks" class="container px-5 mx-auto">
-        <h2 class="sm:text-5xl text-4xl font-extrabold text-left pt-20">Tech Stacks</h2>
+      <div id="tech-stack" class="container px-5 mx-auto">
+        <h2 class="sm:text-5xl text-4xl font-extrabold text-left pt-20">Tech Stack</h2>
+        <div id="tag-cloud" class="w-full h-full"></div>
       </div>
     </section>
-<!--    <section id="services" class="relative py-60 bg-green-50" data-scroll-section>-->
-<!--      <h2 class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -skew-x-12 whitespace-nowrap text-6xl sm:text-9xl font-extrabold py-4">-->
-<!--        <span class="inline-block" data-scroll data-scroll-repeat data-scroll-speed="3" data-scroll-call="randomizeTextColor">S</span>-->
-<!--        <span class="inline-block" data-scroll data-scroll-repeat data-scroll-speed="2" data-scroll-call="randomizeTextColor">e</span>-->
-<!--        <span class="inline-block" data-scroll data-scroll-repeat data-scroll-speed="3" data-scroll-call="randomizeTextColor">r</span>-->
-<!--        <span class="inline-block" data-scroll data-scroll-repeat data-scroll-speed="2" data-scroll-call="randomizeTextColor">v</span>-->
-<!--        <span class="inline-block" data-scroll data-scroll-repeat data-scroll-speed="3" data-scroll-call="randomizeTextColor">i</span>-->
-<!--        <span class="inline-block" data-scroll data-scroll-repeat data-scroll-speed="2" data-scroll-call="randomizeTextColor">c</span>-->
-<!--        <span class="inline-block" data-scroll data-scroll-repeat data-scroll-speed="3" data-scroll-call="randomizeTextColor">e</span>-->
-<!--        <span class="inline-block" data-scroll data-scroll-repeat data-scroll-speed="2" data-scroll-call="randomizeTextColor">s</span>-->
-<!--      </h2>-->
-<!--      <div class="transform rotate-6 skew-x-12">-->
-<!--        <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="20" data-scroll-target="#services">-->
-<!--          <span class="text-3xl sm:text-4xl md:text-6xl 2xl:text-7xl bg-green-400 p-5 whitespace-nowrap">Social Media — Email Marketing — Digital Advertising</span>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="transform -rotate-6 -skew-x-12 mt-40">-->
-<!--        <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-20" data-scroll-target="#services">-->
-<!--          <span class="text-3xl sm:text-4xl md:text-6xl 2xl:text-7xl bg-green-400 p-5 whitespace-nowrap">Web Development - Motion Design - Graphic Design</span>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </section>-->
+    <section id="misc" class="relative bg-white w-screen h-screen" data-scroll-section>
+      <svg class="separator" width="100%" height="120" viewBox="0.1 0.1 180 40" preserveAspectRatio="none">
+        <g transform="translate(-18.298844,-80.973964)">
+          <path style="fill:#2ecc71;" d="M 31.615583,86.351641 H 192.16499 v 26.901969 c 0,0 -32.03411,-14.237983 -59.62682,-12.72484 -22.34188,1.2252 -54.779359,9.72634 -54.779359,9.72634 0,0 -22.029534,3.62882 -34.471238,-1.88988 -12.441702,-5.51871 -11.67199,-22.013589 -11.67199,-22.013589 z" />
+          <path style="fill:#333333;" d="M 18.441597,78.106256 H 198.58126 v 39.288614 c 0,0 -43.10672,-27.825245 -73.47599,-19.687823 -30.369264,8.137423 -46.832208,12.548653 -46.832208,12.548653 0,0 -32.775418,8.05972 -46.735258,0 C 17.577964,102.19598 18.441597,78.106256 18.441597,78.106256 Z" />
+        </g>
+      </svg>
+      <h2 class="sm:text-5xl text-4xl font-extrabold text-left pt-20">Skills</h2>
+      <div>
+        <div class="flex items-start leading-4 text-start mx-[0.5rem] my-0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+          </svg>
+          <p class="ml-[1rem]">Communication and networking skills</p>
+        </div>
+        <div class="flex items-start leading-4 text-start mx-[0.5rem] my-0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+          </svg>
+          <p class="ml-[1rem]">Successfully work in a team environment, as well as independently</p>
+        </div>
+        <div class="flex items-start leading-4 text-start mx-[0.5rem] my-0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+          </svg>
+          <p class="ml-[1rem]">Ability to work under pressure and multitask</p>
+        </div>
+        <div class="flex items-start leading-4 text-start mx-[0.5rem] my-0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+          </svg>
+          <p class="ml-[1rem]">Ability to follow instructions and deliver quality results</p>
+        </div>
+        <div class="flex items-start leading-4 text-start mx-[0.5rem] my-0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+          </svg>
+          <p class="ml-[1rem]">Able to design and architect solutions</p>
+        </div>
+        <div class="flex items-start leading-4 text-start mx-[0.5rem] my-0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+          </svg>
+          <p class="ml-[1rem]">Adapt to change quickly</p>
+        </div>
+        <div class="flex items-start leading-4 text-start mx-[0.5rem] my-0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+          </svg>
+          <p class="ml-[1rem]">Ability to work independently without constant supervision.</p>
+        </div>
+        <div class="flex items-start leading-4 text-start mx-[0.5rem] my-0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+          </svg>
+          <p class="ml-[1rem]">Agile development</p>
+        </div>
+      </div>
+    </section>
 <!--    <section id="clients-section" class="py-40" data-scroll-section>-->
 <!--      <div class="container px-5 mx-auto">-->
 <!--        <div id="clients" class="lg:grid grid-cols-2 gap-4 items-start">-->
@@ -245,6 +283,8 @@
   </div>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="locomotive-scroll.min.js"></script>
+  <script src="jquery.min.js"></script>
+  <script src="3dsvgtagcloud.js"></script>
   <script src="resume.js"></script>
 </body>
 
