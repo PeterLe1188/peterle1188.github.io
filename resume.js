@@ -17,6 +17,16 @@
 		smartphone: { smooth: true }
 	});
 
+	scroll.on("call", (value, way, obj) => {
+		if (value === "toggleBackToTop") {
+			if (way === "enter") {
+				backToTop.classList.add(opacityClass, visibilityClass);
+			} else {
+				backToTop.classList.remove(opacityClass, visibilityClass);
+			}
+		}
+	});
+
 	window.addEventListener('resize', () => {
 		setScrollSpeed();
 	});
@@ -278,4 +288,19 @@
 
 	$("#tag-cloud").svg3DTagCloud( settings );
 	document.getElementById("tag-cloud").children[0].classList.add("m-auto");
+
+	function getRandomIndex() {
+		return Math.floor(Math.random() * 10);
+	}
+
+	const skills = document.getElementById("skills");
+	const children = skills.children;
+
+	setInterval(() => {
+		const randomIndex = getRandomIndex();
+		children[randomIndex].classList.toggle("pulse");
+		setTimeout(() => {
+			children[randomIndex].classList.toggle("pulse");
+		}, 2000)
+	}, 5000)
 })()
